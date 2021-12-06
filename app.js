@@ -25,15 +25,18 @@ const deedsArray = [
     'When a telemarketer calls you today, instead of yelling at them or hanging up immediately, tell the person nicely that you do not want whatever they’re selling but that you hope they have a good day. This good deed brought to you by AT&T, yes, we still have phone plans.',
     'Donate your lightly worn old clothes or provide a clothes’ gift card (whichever you can afford) to a shelter in your area along with a card that says, “Our past does not determine our future.” This good task brought to you by TJMaxx; we have gift cards.'
 ];
-const taskCard1 = document.querySelector('#taskCard1');
-const taskCard2 = document.querySelector('#taskCard2');
-const button = document.querySelector('button');
+const deed1 = document.querySelector('#deed1');
+const deed2 = document.querySelector('#deed2');
+// const button = document.querySelector('#showDeedButton');
+// Since the button was loading the deedCard page, it refused to load up the random deeds too. Switching to a load event listener worked.
 
-getRandomTask = (array) => {
-    const randomTask1 = Math.floor(Math.random() * array.length);
-    const randomTask2 = Math.floor(Math.random() * array.length);
-    taskCard1.innerText = array[randomTask1];
-    taskCard2.innerText=array[randomTask2];
+getRandomDeed = (array) => {
+    const randomDeed1 = Math.floor(Math.random() * array.length);
+    const randomDeed2 = Math.floor(Math.random() * array.length);
+    deed1.innerText = array[randomDeed1];
+    deed2.innerText= array[randomDeed2];
 }
-button.addEventListener("click", () =>
-getRandomTask(deedsArray));
+// button.addEventListener("click", () =>
+// getRandomTask(deedsArray));
+window.addEventListener("load", () =>
+getRandomDeed(deedsArray));
