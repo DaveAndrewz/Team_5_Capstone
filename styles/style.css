@@ -1,11 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap");
 
 /* font-family: 'Open Sans', sans-serif; */
 
 * {
-    padding: 0;
-    margin: 0%;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0%;
+  box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(#86d2d2, #ffffff, #777777);
+  background-repeat: no-repeat;
+}
+
+#mainContainer {
+  display: flex;
+  flex-direction: column;
+  height: 95%;
+  width: 80vw;
+  /* background-color: orange; */
+}
+
+.titlePath {
+  fill: rgb(4, 205, 212);
+  stroke: black;
+  stroke-width: 1px;
+}
+.svgTitleContainer {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  /* background: chartreuse; */
+}
+
+.svgTitleContainer #titleGroup path {
+  fill: transparent;
+  stroke: #4a7073;
+}
+
+.svgTitleContainer #titleGroup .letters {
+  stroke-dasharray: 600;
+  stroke-dashoffset: 0;
+}
+
+.svgTitleContainer #titleGroup .letters {
+  animation: animate-letters 3s linear forwards;
+}
+
+#buttonContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+#showDeedButton {
+  background-color: #4a7073;
+  color: #ffffff;
+  font-size: 1.3em;
+  width: 25vw;
+  height: 10vh;
+  border: 3px solid #ffffff;
+  border-radius: 20px;
+  animation: fadein 3s;
+}

@@ -1,0 +1,36 @@
+@keyframes animate-letters {
+    0% {
+        stroke-dashoffset: 600;
+        opacity: -1;
+    }
+    40% {
+        stroke-dashoffset: 600;
+    }
+    75% {
+        opacity: 1;
+    }
+    80% {
+        stroke-dashoffset: 300;
+        opacity: 1;
+        fill: transparent;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        fill: #77afb7;
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
