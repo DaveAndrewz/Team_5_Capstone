@@ -25,11 +25,6 @@ body {
   width: 80vw;
 }
 
-.titlePath {
-  fill: rgb(4, 205, 212);
-  stroke: black;
-  stroke-width: 1px;
-}
 .svgTitleContainer {
   display: flex;
   width: 90%;
@@ -68,7 +63,6 @@ body {
   animation: fadein 3s;
 }
 
-
 #mainDeedContainer {
   position: relative;
   top: 30%;
@@ -79,6 +73,13 @@ body {
   justify-content: space-evenly;
   border-radius: 50%;
 }
+
+/* #chooseDeedText {
+  background-color: red;
+  width: 90%;
+  height: 20%;
+  flex-wrap: ;
+} */
 
 #deedOption1 {
   position: relative;

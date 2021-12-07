@@ -4,11 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
     <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/colors.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <title>About</title>
 </head>
 <body>
-
+  <header id="navbar">
+    <nav class="navbar-container container">
+      <a href="index.html" class="home-link">
+        <div class="navbar-logo"></div>
+        Daily Deed Drive
+      </a>
+      <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div id="navbar-menu" aria-labelledby="navbar-toggle">
+        <ul class="navbar-links">
+          <li class="navbar-item"><a class="navbar-link" href="about.html">About</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#">Something</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#">Something</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
     <div class="about-section">
 
         <h2> Our Mission </h2> 
@@ -30,9 +51,9 @@
       <div class="row">
         <div class="column">
           <div class="card">
-            <img src="/WebDevelopment/Team_5_Capstone/Images/daveAndrewz.png" alt="Dave" style="width:100%" height="400px">
+            <img src="Images/daveAndrewz.png" alt="Dave" style="width:100%" height="400px">
             <div class="container">
-              <h2>Dave Andrews</h2>
+              <h2>Dave Andrew</h2>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, voluptate dolorum? Consectetur, nobis suscipit fugit possimus Zullam illum nemo ratione aut tempora Zconsequatur, atque omnis obcaecati nostrum, numquam magnam necessitatibus esse. Vel repellat architecto impedit nam molestiae tempora doloribus, eum numquam odio, sit consequatur fugit nemo ipsam quas aliquid perferendis?.</p>
               <p>email@example.com</p>
               <br>
@@ -44,10 +65,10 @@
       
         <div class="column">
           <div class="card">
-            <img src="/WebDevelopment/Team_5_Capstone/Images/DC.JPG" alt="DC" style="width:100%" height="400px">
+            <img src="Images/DC.JPG" alt="DC" style="width:100%" height="400px">
             <div class="container">
               <h2>DC Bastien</h2>
-              <p> Deborah DC Bastien is a biomedical researcher who was inspired by the COVID-19 pandemic to branch out and learn more about web development. DC is an expecting mom (Feb 2022) and a mother of twins, Princeton and Payton age 4. She enjoys medical dramas, puzzles and is an avid football fan and wife to a college football coach. For DC, kind deeds are all about the joy you receive from know your small act can make a huge impact on the life of someone else.  </p>
+              <p> Deborah DC Bastien is a biomedical researcher who was inspired by the COVID-19 pandemic to branch out and learn more about web development. DC is an expecting mom (Feb 2022) and a mother of twins, Princeton and Payton age 4. She enjoys medical dramas, puzzles and is an avid football fan and wife to a college football coach. For DC, kind deeds are all about the joy you receive from knowing that your small act can make a huge impact on the life of someone else.  </p>
               <p>ddcbastien@gmail.com</p>
               <br>
               <p>
@@ -60,7 +81,7 @@
       
         <div class="column">
           <div class="card">
-            <img src="/WebDevelopment/Team_5_Capstone/Images/JJ.png" alt="JJ" style="width:100%" height="400px">
+            <img src="Images/JJ.png" alt="JJ" style="width:100%" height="400px">
             <div class="container">
               <h2>JJ Bryant</h2>
               <p>JJ Bryant is a former English teacher from Pulaski County, Kentucky. After an educator trip to China where she caught typhus, legionellas, AND one of the coxsackieviruses, she stepped away from the middle school classroom, went back to school for accounting, and became a tax preparer. Now she is aiming for her third career as a Junior Web Developer (ready for work immediately or after the 2022 tax season). JJ is a mother of two sons: Tyler (a coach and teacher in Pulaski County) and Matthew (a hopeful Spring 2022 Commonwealth Coder). With the Sept. 9th, 2021 birth of their son Lukas, Tyler and wife Rachel recently made JJ a young grandma. JJ likes spending time with family, reading, genealogy, trivia, archeology, and science fiction, especially Isaac Asimov and Octavia Butler...and Octavia Sexton...and Octavia Spencer...all the Octavias, ok.  </p>
@@ -80,4 +101,6 @@
 
 
 </body>
+<script src="Scripts/app.js"></script>
+<script src="Scripts/navbar.js"></script>
 </html>
