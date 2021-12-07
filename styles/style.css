@@ -138,3 +138,19 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+svg#wavyDavy {
+  position: fixed;
+  width: 2000px;
+  bottom: -440px;
+  left: -80px;
+  opacity: 30%;
+  z-index: -1;
+}
+
+#wavyDavyPath {
+  animation: waveAnim 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
