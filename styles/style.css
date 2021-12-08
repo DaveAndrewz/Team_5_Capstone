@@ -63,7 +63,7 @@ body {
   animation: fadein 3s;
 }
 
-
+/* 
 #mainDeedContainer {
   position: relative;
   top: 30%;
@@ -131,4 +131,14 @@ body {
   width: 100%;
   justify-content: center;
   align-items: center;
+} */
+#chooseDeedText {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 5%;
+  color: #4a7073;
+  animation-duration: 2000ms;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+  animation-name: slidein;
 }
