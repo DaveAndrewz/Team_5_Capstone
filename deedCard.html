@@ -5,25 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Deed Options" />
-    <link rel="stylesheet" href="Styles/style.css" />
-    <link rel="stylesheet" href="Styles/animations.css" />
-    <title>Deed Of The Day</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
+    <link rel="stylesheet" href="styles/navbar.css " />
+    <link rel="stylesheet" href="styles/colors.css" />
+    <title>Daily Deed Project</title>
   </head>
   <body>
-    <div id="mainDeedContainer">
-      <div id="deedOption1">
+    <header id="navbar">
+      <nav class="navbar-container container">
+        <a href="index.html" class="home-link">
+          <div class="navbar-logo"></div>
+          Daily Deed Project
+        </a>
+        <button
+          type="button"
+          id="navbar-toggle"
+          aria-controls="navbar-menu"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div id="navbar-menu" aria-labelledby="navbar-toggle">
+          <ul class="navbar-links">
+            <li class="navbar-item">
+              <a class="navbar-link" href="about.html">About</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#">Something</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#">Something</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div id="pageContainer">
+      <!-- <div id="chooseDeedText">
+        <h1>CHOOSE YO DEED</h1>
+      </div> -->
+      <div id="mainDeedContainer">
+        <div id="deedOption1">
           <div id="deed1Text">
             <span id="deed1"></span>
           </div>
-      </div>
+        </div>
 
-
-      <div id="deedOption2">
+        <div id="deedOption2">
           <div id="deed2Text">
             <span id="deed2"></span>
           </div>
+        </div>
       </div>
     </div>
   </body>
-  <script src="app.js"></script>
+  <script src="Scripts/app.js"></script>
+  <script src="Scripts/navbar.js"></script>
 </html>
