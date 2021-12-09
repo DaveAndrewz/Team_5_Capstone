@@ -4,7 +4,7 @@
 
 * {
   padding: 0;
-  margin: 0%;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -61,84 +61,4 @@ body {
   border: 3px solid #ffffff;
   border-radius: 20px;
   animation: fadein 3s;
-}
-
-/* 
-#mainDeedContainer {
-  position: relative;
-  top: 30%;
-  display: flex;
-  background-color: #4a7073;
-  width: 80%;
-  height: 60%;
-  justify-content: space-evenly;
-  border-radius: 50%;
-}
-
-#deedOption1 {
-  position: relative;
-  top: 5%;
-  background-color: #4a7073;
-  width: 42.5%;
-  height: 90%;
-  transform: rotate(-2deg);
-  border-radius: 25px;
-}
-
-#deedOption2 {
-  position: relative;
-  top: 5%;
-  background-color: #4a7073;
-  width: 42.5%;
-  height: 90%;
-  transform: rotate(2deg);
-  border-radius: 25px;
-}
-
-#deed1Text {
-  width: 90%;
-  height: 90%;
-  background-color: #86d2d2;
-  position: relative;
-  top: 5%;
-  left: 5%;
-  border-radius: 20px;
-  border: 8px solid white;
-}
-
-#deed1Text span {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-#deed2Text {
-  width: 90%;
-  height: 90%;
-  background-color: #86d2d2;
-  position: relative;
-  top: 5%;
-  left: 5%;
-  border-radius: 20px;
-  border: 8px solid white;
-}
-
-#deed2Text span {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-} */
-#chooseDeedText {
-  font-size: 2rem;
-  text-align: center;
-  margin-top: 5%;
-  color: #4a7073;
-  animation-duration: 2000ms;
-  animation-iteration-count: 3;
-  animation-direction: alternate;
-  animation-name: slidein;
 }
