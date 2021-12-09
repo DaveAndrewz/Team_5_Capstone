@@ -6,7 +6,6 @@
   padding: 0;
   margin: 0%;
   box-sizing: border-box;
-<<<<<<< HEAD
 }
 
 body {
@@ -153,8 +152,6 @@ svg#wavyDavy {
   animation: waveAnim 30s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-=======
->>>>>>> JJ
 }
 
 body {
