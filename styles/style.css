@@ -6,6 +6,7 @@
   padding: 0;
   margin: 0%;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -169,11 +170,58 @@ svg#wavyDavy {
   position: relative;
   top: 4.5em;
   width: 98vw;
-  height: 45%;
+  padding: 2%;
   background-color: var(--deedPage-color1);
   border: 5px solid white;
   border-radius: 25px;
   opacity: 80%;
+  color: var(--deedPage-color5);
+  text-align: center;
+  line-height: 3em;
+  overflow: hidden;
+}
+#missionTitle {
+  font-size: 40px;
+  background-image: linear-gradient(0deg, var(--deedPage-color5), var(--deedPage-color2), var(--deedPage-color5));
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+#workOnThis {
+  overflow: hidden;
+  font-style: italic;
+  font-size: 40px;
+  background-image: linear-gradient(0deg, var(--deedPage-color5), var(--deedPage-color2), var(--deedPage-color5));
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+#aboutHeading {
+  background-image: linear-gradient(0deg, var(--deedPage-color5), var(--deedPage-color2), var(--deedPage-color5));
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+#howItWorks {
+  background-image: linear-gradient(0deg, var(--deedPage-color5), var(--deedPage-color2), var(--deedPage-color5));
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 #aboutMiddleSection {
@@ -186,86 +234,126 @@ svg#wavyDavy {
   position: relative;
   top: 40%;
   width: 100%;
+  overflow: hidden;
 }
 
 #daveCard {
   display: flex;
+  position: relative;
+  top: 4%;
+  display: inline-block;
   margin: auto;
   width: 30%;
-  height: 100vh;
+  height: 120vh;
   border: 5px solid var(--deedPage-color5);
   justify-content: center;
-  background-color: var(--deedPage-color2);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 25px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.8);
 }
 
 #daveCardTop {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: 50%;
+  border-bottom: 5px solid white;
+}
+
+#daveCardBottom {
+
 }
 
 #dcCard {
   display: flex;
+  position: relative;
+  top: 4%;
+  display: inline-block;
   margin: auto;
   width: 30%;
-  height: 100vh;
+  height: 120vh;
   border: 5px solid var(--deedPage-color5);
   justify-content: center;
-  background-color: var(--deedPage-color2);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 25px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.8);
 }
 
 #dcCardTop {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: 50%;
+  border-bottom: 5px solid white;
 }
 
 #jjCard {
   display: flex;
+  position: relative;
+  top: 4%;
+  display: inline-block;
   margin: auto;
   width: 30%;
-  height: 100vh;
+  height: 120vh;
   border: 5px solid var(--deedPage-color5);
   justify-content: center;
-  background-color: var(--deedPage-color2);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 25px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.8);
 }
 
 #jjCardTop {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: 50%;
+  border-bottom: 5px solid white;
 }
 
 #photoDave {
   position: relative;
-  top: 2%;
-  width: 80%;
+  width: 90%;
   height: 90%;
   border: 5px solid white;
   border-radius: 25px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  opacity: 1;
 }
+
 #photoDC {
   position: relative;
-  top: 2%;
-  width: 80%;
+  width: 90%;
   height: 90%;
   border: 5px solid white;
   border-radius: 25px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
 }
 #photoJJ {
   position: relative;
-  top: 2%;
-  width: 80%;
+  width: 90%;
   height: 90%;
   border: 5px solid white;
   border-radius: 25px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+#mailButton {
+  outline: 0;
+  border-radius: 25px;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color:var(--deedPage-color1) ;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  text-decoration: none;
+  border: 4px solid var(--deedPage-color5);
+}
+#mailButton:hover {
+  background-color: #555;
+  border: 4px solid var(--deedPage-color2)
 }
