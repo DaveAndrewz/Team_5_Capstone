@@ -11,7 +11,7 @@
 body {
   height: unset;
   min-height: 120vh;
-  line-height: 1.6;
+  line-height: 1.2;
   justify-content: space-between;
 }
 
@@ -27,7 +27,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.card {
+.deedCard {
   position: relative;
   width: calc(200px + 10vw);
   height: calc(200px + 10vh);
@@ -39,7 +39,7 @@ body {
 #card2 {
   transform: rotate(2deg);
 }
-.card .deedOption {
+.deedCard .deedOption {
   position: relative;
   margin: auto;
   background: linear-gradient(10deg, #1c4d4d, rgb(71, 30, 37), #1c4d4d);
@@ -51,17 +51,18 @@ body {
   padding: 10px;
   font-size: calc(.8rem + .8vw);
 }
-.card .deedOption .deed {
+.deedCard .deedOption .deed {
   opacity: .5;
   transform: translateX(-5%);
 }
-.card:hover .deedOption .deed {
+.deedCard:hover .deedOption .deed,
+.deedCard:focus .deedOption .deed {
   transform: translateX(2.5%);
   width: 100%;
   opacity: 1;
   transition: 500ms;
 }
-.card .details {
+.deedCard .deedCover {
   position: absolute;
   top: 0;
   left: 0;
@@ -72,10 +73,11 @@ body {
   transform-origin: left;
   transform: perspective(2000px) rotateY(0deg);
 }
-.card:hover .details {
+.deedCard:hover .deedCover, 
+.deedCard:focus .deedCover {
   transform: perspective(2000px) rotateY(-90deg);
 }
-.card .details .center {
+.deedCard .deedCover .centerDeedCover {
   position: absolute;
   width: 100%;
   padding: 20px;
@@ -87,11 +89,11 @@ body {
   animation-iteration-count: 1;
   animation-name: slidein;
 }
-.card .details .center b {
+.deedCard .deedCover .centerDeedCover b {
   color: #ece1e1;
   font-size: calc(1rem + 1vw);
 }
-.card .details .center b span {
+.deedCard .deedCover .centerDeedCover b span {
   font-size: calc(1.1rem + 1vw);
   color: #1c4d4d;
 }
@@ -105,7 +107,7 @@ body {
     justify-content: center;
     align-items: center; 
   }
-  .card {
+  .deedCard {
     top: 10%;
   }
 }
@@ -119,7 +121,7 @@ body {
     justify-content: center;
     align-items: center; 
   }
-  .card {
+  .deedCard {
     top: 5%;
     width: calc(225px + 10vw);
     height: calc(225px + 10vh);
@@ -134,7 +136,7 @@ body {
     align-items: center;
     gap: 15px; 
   }
-  .card {
+  .deedCard {
     top: 0%;
     width: calc(250px + 15vw);
     height: calc(250px + 15vh);
@@ -144,7 +146,7 @@ body {
   #mainDeedContainer {
     gap: 20px; 
   }
-  .card {
+  .deedCard {
     top: 0%;
     width: calc(300px + 15vw);
     height: calc(300px + 15vh);
