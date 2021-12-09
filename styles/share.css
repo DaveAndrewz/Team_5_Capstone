@@ -1,12 +1,21 @@
+.sharing-section{
+    padding-top: 80px;
+    text-align: center;
+    color: white;
+}
+
 
 
 .image-container{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-    padding: 80px;
-    margin: 0;
-    
+    justify-content: space-around;
+    padding-top: 25px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 15px;
+
+   
   }
   
   
@@ -21,7 +30,7 @@
   .image__img {
     width: 400px;
     height: 450px;
-    padding: 25px;
+    padding-bottom: 25px;
   }
   
   .image__overlay {
@@ -66,6 +75,7 @@
   .image__title {
       font-size: 2em;
       font-weight: bold;
+      text-align: center;
   }
   
   .image__description {
