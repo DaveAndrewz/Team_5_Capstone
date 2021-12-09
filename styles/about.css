@@ -73,6 +73,20 @@ body {
   .button:hover {
     background-color: #555;
   }
+<<<<<<< HEAD
+=======
+
+  /* Footer Styling */
+  #copy {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  #copy a {
+    cursor: pointer;
+    color: #555;
+  }
+>>>>>>> JJ
   
   @media screen and (max-width: 650px) {
     .column {
