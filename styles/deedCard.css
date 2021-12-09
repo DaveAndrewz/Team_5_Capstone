@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap");
+
+/* font-family: 'Open Sans', sans-serif; */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: unset;
+  min-height: 120vh;
+  line-height: 1.6;
+  justify-content: space-between;
+}
+
+#mainDeedContainer {
+  margin: 0 auto;
+  top: calc(15% + 5vh);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  min-width: 90%;
+  min-height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  position: relative;
+  width: calc(200px + 10vw);
+  height: calc(200px + 10vh);
+  background-color: white;
+}
+#card1 {
+  transform: rotate(-2deg);
+}
+#card2 {
+  transform: rotate(2deg);
+}
+.card .deedOption {
+  position: relative;
+  margin: auto;
+  background: linear-gradient(10deg, #1c4d4d, rgb(71, 30, 37), #1c4d4d);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: rgb(211, 197, 197);
+  border: 8px solid white;
+  padding: 10px;
+  font-size: calc(.8rem + .8vw);
+}
+.card .deedOption .deed {
+  opacity: .5;
+  transform: translateX(-5%);
+}
+.card:hover .deedOption .deed {
+  transform: translateX(2.5%);
+  width: 100%;
+  opacity: 1;
+  transition: 500ms;
+}
+.card .details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  background: linear-gradient(45deg,#808080, #fff, #eccaca, #80a5a5);
+  transition: 500ms;
+  transform-origin: left;
+  transform: perspective(2000px) rotateY(0deg);
+}
+.card:hover .details {
+  transform: perspective(2000px) rotateY(-90deg);
+}
+.card .details .center {
+  position: absolute;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(#1c4d4d, #eccaca, #1c4d4d);
+  top: 50%;
+  transform: translateY(-50%);
+  animation-duration: 1000ms;
+  animation-iteration-count: 1;
+  animation-name: slidein;
+}
+.card .details .center b {
+  color: #ece1e1;
+  font-size: calc(1rem + 1vw);
+}
+.card .details .center b span {
+  font-size: calc(1.1rem + 1vw);
+  color: #1c4d4d;
+}
+@media (min-width: 568px) and (orientation: landscape){
+  body {
+    min-height: 100vh;
+  }
+  #mainDeedContainer {
+    top: calc(10% + 5vh);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+  }
+  .card {
+    top: 10%;
+  }
+}
+@media (min-width: 767px){
+  body {
+    min-height: 100vh;
+  }
+  #mainDeedContainer {
+    top: unset;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+  }
+  .card {
+    top: 5%;
+    width: calc(225px + 10vw);
+    height: calc(225px + 10vh);
+  }
+}
+@media (min-width: 992px){
+  #mainDeedContainer {
+    min-height: unset;
+    top: unset;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; 
+  }
+  .card {
+    top: 0%;
+    width: calc(250px + 15vw);
+    height: calc(250px + 15vh);
+  }
+}
+@media (min-width: 1200px){
+  #mainDeedContainer {
+    gap: 20px; 
+  }
+  .card {
+    top: 0%;
+    width: calc(300px + 15vw);
+    height: calc(300px + 15vh);
+  }
+}
