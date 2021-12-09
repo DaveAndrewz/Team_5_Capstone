@@ -58,6 +58,7 @@ body {
 .deedCard:hover .deedOption .deed,
 .deedCard:focus .deedOption .deed {
   transform: translateX(2.5%);
+  margin: 0 auto;
   width: 100%;
   opacity: 1;
   transition: 500ms;
