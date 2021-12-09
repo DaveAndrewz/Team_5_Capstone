@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/animations.css" />
     <link rel="stylesheet" href="styles/navbar.css " />
     <link rel="stylesheet" href="styles/colors.css" />
+    <link rel="stylesheet" href="styles/deedCard.css">
     <title>Your DailyDeed Options</title>
   </head>
   <body>
@@ -41,25 +42,31 @@
         </div>
       </nav>
     </header>
-    <div id="pageContainer">
-      <div id="chooseDeedText">
-        <h1>CHOOSE YO DEED</h1>
+  <main id="mainDeedContainer">
+      <section id="card1" class="deedCard">
+      <div id="deedOption1" class="deedOption">
+        <p class="deed" id="deed1">INPUTTED TEXT GOES HERE</p>
       </div>
-      <div id="mainDeedContainer">
-        <div id="deedOption1">
-          <div id="deed1Text">
-            <span id="deed1">INPUTTED TEXT GOES HERE</span>
-          </div>
-        </div>
-
-        <div id="deedOption2">
-          <div id="deed2Text">
-            <span id="deed2">INPUTTED TEXT GOES HERE</span>
-          </div>
+      <div class="deedCover">
+        <div class="centerDeedCover">
+          <b>OPEN FOR YOUR<br><span>DailyDeed</span><br>Option 1</b>
         </div>
       </div>
-    </div>
+    </section>
+    <section id="card2" class="deedCard">
+      <div id="deedOption2" class="deedOption">
+        <p class="deed" id="deed2">INPUTTED TEXT GOES HERE</p>
+      </div>
+      <div class="deedCover">
+        <div class="centerDeedCover">
+          <b>OPEN FOR YOUR<br><span>DailyDeed</span><br>Option 2</b>
+        </div>
+      </div>
+    </section>
+    </main>
   </body>
   <script src="Scripts/app.js"></script>
   <script src="Scripts/navbar.js"></script>
 </html>
+
+
