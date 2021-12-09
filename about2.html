@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Team 5 Capstone Project" />
+    <meta name="author" content="D. Andrew, D. Bastien, J. Bryant" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/colors.css" />
+    <title>About Edited</title>
+  </head>
+  <body>
+    <header id="navbar">
+      <nav class="navbar-container container">
+        <a href="index.html" class="home-link">
+          <div class="navbar-logo"></div>
+          Daily Deed Project
+        </a>
+        <button
+          type="button"
+          id="navbar-toggle"
+          aria-controls="navbar-menu"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div id="navbar-menu" aria-labelledby="navbar-toggle">
+          <ul class="navbar-links">
+            <li class="navbar-item">
+              <a class="navbar-link" href="about.html">About</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#">Something</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#">Something</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div id="aboutSectionContainer">
+      <div id="aboutTopSection"></div>
+
+      <div id="aboutMiddleSection"></div>
+
+      <div id="aboutBottomSection">
+        <div id="daveCard">
+          <div id="daveCardTop">
+            <img id="photoDave" src="Images/Dave.jpeg" alt="Dave" />
+          </div>
+        </div>
+        <div id="dcCard">
+          <div id="dcCardTop">
+            <img id="photoDC" src="Images/DC.JPG" alt="DC" />
+          </div>
+        </div>
+        <div id="jjCard">
+          <div id="jjCardTop">
+            <img id="photoJJ" src="Images/JJ.png" alt="JJ" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <svg id="wavyDavy" viewbox="0 0 1320 500">
+      <path
+        id="wavyDavyPath"
+        width="1000px"
+        d="
+      M0,192 C220,100,440,100,660,192 
+      C880,290,1100,290,1320,192
+      L1320 500 L0 500
+      "
+        fill="#FFFFFF"
+      />
+    </svg>
+  </body>
+  <script src="Scripts/app.js"></script>
+  <script src="Scripts/navbar.js"></script>
+</html>
