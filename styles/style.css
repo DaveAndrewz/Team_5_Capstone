@@ -1,11 +1,156 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap");
 
 /* font-family: 'Open Sans', sans-serif; */
 
 * {
-    padding: 0;
-    margin: 0%;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(#86d2d2, #ffffff, #777777);
+  background-repeat: no-repeat;
+}
+
+#mainContainer {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  width: 80vw;
+}
+
+.svgTitleContainer {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  /* background: chartreuse; */
+}
+
+.svgTitleContainer #titleGroup path {
+  fill: transparent;
+  stroke: #4a7073;
+}
+
+.svgTitleContainer #titleGroup .letters {
+  stroke-dasharray: 600;
+  stroke-dashoffset: 0;
+}
+
+.svgTitleContainer #titleGroup .letters {
+  animation: animate-letters 3s linear forwards;
+}
+
+#buttonContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+#showDeedButton {
+  background-color: #4a7073;
+  color: #ffffff;
+  font-size: 1em;
+  width: 25vw;
+  height: 8vh;
+  border: 3px solid #ffffff;
+  border-radius: 20px;
+  animation: fadein 3s;
+}
+
+#mainDeedContainer {
+  position: relative;
+  top: 30%;
+  display: flex;
+  background-color: #4a7073;
+  width: 80%;
+  height: 60%;
+  justify-content: space-evenly;
+  border-radius: 50%;
+}
+
+/* #chooseDeedText {
+  background-color: red;
+  width: 90%;
+  height: 20%;
+  flex-wrap: ;
+} */
+
+#deedOption1 {
+  position: relative;
+  top: 5%;
+  background-color: #4a7073;
+  width: 42.5%;
+  height: 90%;
+  transform: rotate(-2deg);
+  border-radius: 25px;
+}
+
+#deedOption2 {
+  position: relative;
+  top: 5%;
+  background-color: #4a7073;
+  width: 42.5%;
+  height: 90%;
+  transform: rotate(2deg);
+  border-radius: 25px;
+}
+
+#deed1Text {
+  width: 90%;
+  height: 90%;
+  background-color: #86d2d2;
+  position: relative;
+  top: 5%;
+  left: 5%;
+  border-radius: 20px;
+  border: 8px solid white;
+}
+
+#deed1Text span {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#deed2Text {
+  width: 90%;
+  height: 90%;
+  background-color: #86d2d2;
+  position: relative;
+  top: 5%;
+  left: 5%;
+  border-radius: 20px;
+  border: 8px solid white;
+}
+
+#deed2Text span {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+svg#wavyDavy {
+  position: fixed;
+  width: 2000px;
+  bottom: -440px;
+  left: -80px;
+  opacity: 30%;
+  z-index: -1;
+}
+
+#wavyDavyPath {
+  animation: waveAnim 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
