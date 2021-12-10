@@ -44,19 +44,19 @@ body {
 }
 .deedCard .deedOption {
   position: relative;
-  margin: auto;
+  margin: 0, auto;
   background: linear-gradient(10deg, #1c4d4d, rgb(71, 30, 37), #1c4d4d);
   width: 100%;
   height: 100%;
   overflow: hidden;
   color: rgb(211, 197, 197);
   border: 8px solid white;
-  padding: 10px;
+  padding: 15px;
   font-size: calc(.8rem + .8vw);
 }
 .deedCard .deedOption .deed {
   opacity: .5;
-  transform: translateX(-5%);
+  transform: translateX(-2.5%);
 }
 .deedCard:hover .deedOption .deed,
 .deedCard:focus .deedOption .deed {
