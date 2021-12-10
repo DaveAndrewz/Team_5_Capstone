@@ -16,6 +16,7 @@ body {
 }
 
 #mainDeedContainer {
+  
   margin: 0 auto;
   top: calc(15% + 5vh);
   display: flex;

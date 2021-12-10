@@ -30,6 +30,7 @@
     right: 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
     border-bottom: 2px solid white;
+    z-index: 100;
   }
   .navbar-container {
     display: flex;
@@ -58,7 +59,8 @@
   .navbar-link {
     justify-content: center;
     width: 100%;
-    padding: 0.4em 0.8em;
+    /* The last padding number was 0.8em. I increased to hopefully make room for Sharing|Caring ~JJ */
+    padding: 0.4em 0.9em; 
     border-radius: 5px;
   }
   
