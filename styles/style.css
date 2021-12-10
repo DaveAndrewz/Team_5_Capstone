@@ -21,10 +21,12 @@ body {
 }
 
 #mainContainer {
+  position: absolute;
   display: flex;
   flex-direction: column;
   height: 90%;
   width: 80vw;
+  flex: 1;
 }
 
 .svgTitleContainer {
