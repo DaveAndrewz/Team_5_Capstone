@@ -3,9 +3,6 @@
     text-align: center;
     color: white;
 }
-
-
-
 .image-container{
     display: flex;
     flex-flow: row wrap;
@@ -14,23 +11,22 @@
     padding-right: 5px;
     padding-left: 5px;
     padding-bottom: 15px;
-
-   
-  }
-  
-  
-  .image {
+}
+.image {
       position: relative;
       width: 400px;
-      height: 450px;
-    
-     
+      height: 450px;   
   }
   
   .image__img {
     width: 400px;
     height: 450px;
     padding-bottom: 25px;
+      padding: 40px;   
+  }
+  
+  .image__img {
+      width: 100%;
   }
   
   .image__overlay {
@@ -45,6 +41,8 @@
       /* font-family: 'Quicksand', sans-serif; */
       display: flex;
       flex-direction: column;
+      align-items: flex-start;
+      align-items: center;
       align-items: flex-start;
       justify-content: center;
       opacity: 0;
@@ -75,6 +73,7 @@
   .image__title {
       font-size: 2em;
       font-weight: bold;
+      text-align: center;
       text-align: center;
   }
   

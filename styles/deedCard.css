@@ -9,21 +9,24 @@
 }
 
 body {
-  height: unset;
   min-height: 120vh;
+  min-width: 100vw;
   line-height: 1.2;
-  justify-content: space-between;
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(#86d2d2, #ffffff, #777777);
+  background-attachment: fixed;
 }
 
 #mainDeedContainer {
+  position: relative;
   margin: 0 auto;
-  top: calc(15% + 5vh);
+  top: calc(10% + 2vh);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 10px;
-  min-width: 90%;
-  min-height: 100%;
+  min-width: 90vw;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
 }
@@ -41,23 +44,24 @@ body {
 }
 .deedCard .deedOption {
   position: relative;
-  margin: auto;
+  margin: 0, auto;
   background: linear-gradient(10deg, #1c4d4d, rgb(71, 30, 37), #1c4d4d);
   width: 100%;
   height: 100%;
   overflow: hidden;
   color: rgb(211, 197, 197);
   border: 8px solid white;
-  padding: 10px;
+  padding: 15px;
   font-size: calc(.8rem + .8vw);
 }
 .deedCard .deedOption .deed {
   opacity: .5;
-  transform: translateX(-5%);
+  transform: translateX(-2.5%);
 }
 .deedCard:hover .deedOption .deed,
 .deedCard:focus .deedOption .deed {
   transform: translateX(2.5%);
+  margin: 0 auto;
   width: 100%;
   opacity: 1;
   transition: 500ms;
@@ -97,6 +101,33 @@ body {
   font-size: calc(1.1rem + 1vw);
   color: #1c4d4d;
 }
+svg#wavyDavy {
+  position: fixed;
+  width: 2000px;
+  bottom: -440px;
+  left: -80px;
+  opacity: 30%;
+  z-index: -1;
+  stroke-width: 2px;
+  stroke: rgb(67, 243, 243);
+}
+
+#wavyDavyPath {
+  animation: waveAnim 40s ease;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+/* Footer Styling */
+#copy{
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+}
+#copy a {
+  cursor: pointer;
+  color: #555;
+}
+
 @media (min-width: 568px) and (orientation: landscape){
   body {
     min-height: 100vh;
@@ -108,7 +139,7 @@ body {
     align-items: center; 
   }
   .deedCard {
-    top: 10%;
+    top: 15%;
   }
 }
 @media (min-width: 767px){
@@ -116,23 +147,23 @@ body {
     min-height: 100vh;
   }
   #mainDeedContainer {
-    top: unset;
+    top: calc(25% + 10vh);
+    min-height: 100vh;
     flex-direction: row;
     justify-content: center;
     align-items: center; 
   }
   .deedCard {
-    top: 5%;
+    top: 20%;
     width: calc(225px + 10vw);
     height: calc(225px + 10vh);
   }
 }
 @media (min-width: 992px){
   #mainDeedContainer {
-    min-height: unset;
-    top: unset;
+    min-height: 75vh;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap: 15px; 
   }
@@ -147,7 +178,6 @@ body {
     gap: 20px; 
   }
   .deedCard {
-    top: 0%;
     width: calc(300px + 15vw);
     height: calc(300px + 15vh);
   }

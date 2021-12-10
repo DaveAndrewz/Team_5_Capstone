@@ -13,8 +13,8 @@ body {
   /* body as display:flex causes footer to float instead of display at the bottom of the page everywhere except share.html */
   display: flex;
   justify-content: center;
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
   font-family: "Open Sans", sans-serif;
   background: linear-gradient(#86d2d2, #ffffff, #777777);
   background-attachment: fixed;
@@ -66,7 +66,6 @@ body {
   border-radius: 20px;
   animation: fadein 3s;
 }
-
 svg#wavyDavy {
   position: fixed;
   width: 2000px;
@@ -234,7 +233,6 @@ svg#wavyDavy {
 }
 
 /* ABOUT SECTION STYLING */
-
 #aboutSectionContainer {
   display: flex;
   flex-direction: row;
@@ -347,6 +345,12 @@ svg#wavyDavy {
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 50%;
+  border-bottom: 5px solid white;
+}
+
+#daveCardBottom {
+
   height: 30%;
   border-bottom: 5px solid white;
 }
@@ -423,6 +427,13 @@ svg#wavyDavy {
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 50%;
+  border-bottom: 5px solid white;
+}
+
+#photoDave {
+  position: relative;
+  width: 90%;
   height: 30%;
   border-bottom: 5px solid white;
 }
@@ -453,6 +464,7 @@ svg#wavyDavy {
 
 #photoDC {
   position: relative;
+  width: 90%;
   width: 55%;
   height: 90%;
   border: 5px solid white;
@@ -461,6 +473,7 @@ svg#wavyDavy {
 }
 #photoJJ {
   position: relative;
+  width: 90%;
   width: 55%;
   height: 90%;
   border: 5px solid white;
@@ -487,6 +500,7 @@ svg#wavyDavy {
   border: 4px solid var(--deedPage-color2)
 }
 
+/* Footer Styling */
 #copy{
   text-align: center;
   font-size: 1rem;
