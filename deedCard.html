@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/animations.css" />
     <link rel="stylesheet" href="styles/navbar.css " />
     <link rel="stylesheet" href="styles/colors.css" />
+    <link rel="stylesheet" href="styles/deedCard.css">
     <title>Your DailyDeed Options</title>
   </head>
   <body>
@@ -36,30 +37,54 @@
               <a class="navbar-link" href="about.html">About</a>
             </li>
             <li class="navbar-item"><a class="navbar-link" href="deedCard.html">DeedCards</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="share.html">Sharing|Caring</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="share.html">Sharing</a></li>
           </ul>
         </div>
       </nav>
     </header>
-    <div id="pageContainer">
-      <div id="chooseDeedText">
-        <h1>CHOOSE YO DEED</h1>
+  <main id="mainDeedContainer">
+      <section id="card1" class="deedCard">
+      <div id="deedOption1" class="deedOption">
+        <p class="deed" id="deed1">INPUTTED TEXT GOES HERE</p>
       </div>
-      <div id="mainDeedContainer">
-        <div id="deedOption1">
-          <div id="deed1Text">
-            <span id="deed1">INPUTTED TEXT GOES HERE</span>
-          </div>
-        </div>
-
-        <div id="deedOption2">
-          <div id="deed2Text">
-            <span id="deed2">INPUTTED TEXT GOES HERE</span>
-          </div>
+      <div class="deedCover">
+        <div class="centerDeedCover">
+          <b>OPEN FOR YOUR<br><span>DailyDeed</span><br>Option 1</b>
         </div>
       </div>
+    </section>
+    <section id="card2" class="deedCard">
+      <div id="deedOption2" class="deedOption">
+        <p class="deed" id="deed2">INPUTTED TEXT GOES HERE</p>
+      </div>
+      <div class="deedCover">
+        <div class="centerDeedCover">
+          <b>OPEN FOR YOUR<br><span>DailyDeed</span><br>Option 2</b>
+        </div>
+      </div>
+    </section>
+    </main>
+      
+      <svg id="wavyDavy" viewbox="0 0 1320 500">
+        <path
+          id="wavyDavyPath"
+          width="1000px"
+          d="
+        M0,192 C220,100,440,100,660,192 
+        C880,290,1100,290,1320,192
+        L1320 500 L0 500
+        "
+          fill="#FFFFFF"
+        />
+      </svg>
     </div>
+
+    <footer>
+      <p id="copy">Copyright &copy; 2021 <a href="https://www.linkedin.com/in/davidjandrew" target="_blank">Dave Andrew</a>, <a href="https://www.linkedin.com/in/ddcbastien" target="_blank">DC Bastien</a>, and <a href="https://www.linkedin.com/in/jessicajjbryant" target="_blank">JJ Bryant</a></p>
+  </footer>
   </body>
   <script src="Scripts/app.js"></script>
   <script src="Scripts/navbar.js"></script>
 </html>
+
+
