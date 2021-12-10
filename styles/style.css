@@ -73,14 +73,8 @@ body {
   height: 60%;
   justify-content: space-evenly;
   border-radius: 50%;
+  z-index: 1;
 }
-
-/* #chooseDeedText {
-  background-color: red;
-  width: 90%;
-  height: 20%;
-  flex-wrap: ;
-} */
 
 #deedOption1 {
   position: relative;
@@ -242,8 +236,9 @@ svg#wavyDavy {
   -webkit-text-stroke-color: var(--deedPage-color1); 
 }
 
-#aboutBottomSection {
+div#aboutBottomSection {
   display: flex;
+  flex-wrap: wrap-reverse;
   position: relative;
   top: 10%;
   width: 100%;
@@ -264,6 +259,7 @@ svg#wavyDavy {
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 25px;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.8);
+  /* overflow: hidden; */
 }
 
 #daveCardTop {
