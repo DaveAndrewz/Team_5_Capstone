@@ -64,75 +64,6 @@ body {
   animation: fadein 3s;
 }
 
-#mainDeedContainer {
-  position: relative;
-  top: 30%;
-  display: flex;
-  background-color: #4a7073;
-  width: 80%;
-  height: 60%;
-  justify-content: space-evenly;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-#deedOption1 {
-  position: relative;
-  top: 5%;
-  background-color: #4a7073;
-  width: 42.5%;
-  height: 90%;
-  transform: rotate(-2deg);
-  border-radius: 25px;
-}
-
-#deedOption2 {
-  position: relative;
-  top: 5%;
-  background-color: #4a7073;
-  width: 42.5%;
-  height: 90%;
-  transform: rotate(2deg);
-  border-radius: 25px;
-}
-
-#deed1Text {
-  width: 90%;
-  height: 90%;
-  background-color: #86d2d2;
-  position: relative;
-  top: 5%;
-  left: 5%;
-  border-radius: 20px;
-  border: 8px solid white;
-}
-
-#deed1Text span {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-#deed2Text {
-  width: 90%;
-  height: 90%;
-  background-color: #86d2d2;
-  position: relative;
-  top: 5%;
-  left: 5%;
-  border-radius: 20px;
-  border: 8px solid white;
-}
-
-#deed2Text span {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
 
 svg#wavyDavy {
   position: fixed;
@@ -406,4 +337,16 @@ div#aboutBottomSection {
 #mailButton:hover {
   background-color: #555;
   border: 4px solid var(--deedPage-color2)
+}
+
+/* Footer Styling */
+#copy{
+  text-align: center;
+  font-size: 1rem;
+  padding: 10px;
+  color: rgb(71, 30, 37);
+}
+#copy a {
+  cursor: pointer;
+  color: rgb(71, 30, 37);
 }
