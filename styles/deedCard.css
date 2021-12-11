@@ -36,11 +36,13 @@ body {
   height: calc(200px + 10vh);
   background-color: white;
 }
-#card1 {
+#deedCard1 {
   transform: rotate(-2deg);
+  border-radius: 20%;
 }
-#card2 {
+#deedCard2 {
   transform: rotate(2deg);
+  border-radius: 20%;
 }
 .deedCard .deedOption {
   position: relative;
@@ -55,7 +57,8 @@ body {
   color: rgb(211, 197, 197);
   border: 8px solid white;
   padding: 15px;
-  font-size: calc(.8rem + .8vw);
+  font-size: calc(.7rem + .7vw);
+  border-radius: 20%;
 }
 .deedCard .deedOption .deed {
   opacity: .5;
@@ -79,6 +82,7 @@ body {
   transition: 500ms;
   transform-origin: left;
   transform: perspective(2000px) rotateY(0deg);
+  border-radius: 20%;
 }
 .deedCard:hover .deedCover, 
 .deedCard:focus .deedCover {
