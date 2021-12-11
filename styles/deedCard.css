@@ -35,14 +35,13 @@ body {
   width: calc(200px + 10vw);
   height: calc(200px + 10vh);
   background-color: white;
+  border-radius: 20%;
 }
 #deedCard1 {
   transform: rotate(-2deg);
-  border-radius: 20%;
 }
 #deedCard2 {
   transform: rotate(2deg);
-  border-radius: 20%;
 }
 .deedCard .deedOption {
   position: relative;
