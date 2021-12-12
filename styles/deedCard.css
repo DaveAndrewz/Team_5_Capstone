@@ -1,3 +1,12 @@
+/*  
+Table of Contents
+10-29 global
+30-139 deed card
+140-159 wavy davy 
+160- form
+copyright
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap");
 
 /* font-family: 'Open Sans', sans-serif; */
@@ -17,6 +26,8 @@ body {
   background-attachment: fixed;
 }
 
+
+/* Deed Cards */
 #mainDeedContainer {
   position: relative;
   margin: 0 auto;
@@ -123,6 +134,10 @@ body {
   font-size: calc(1.1rem + 1vw);
   color: var(--deedPage-color6);
 }
+
+
+
+/* WavyDavy */
 svg#wavyDavy {
   position: fixed;
   width: 2000px;
@@ -139,6 +154,86 @@ svg#wavyDavy {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+
+
+
+/* Button and Form */
+.button-form-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+}
+.open-form-button {
+  background-color: var(--deedPage-color6);
+  color: var(--deedPage-color8);
+  font-size: calc(.8rem + .8vw);
+  font-weight: bold;
+  padding: calc(.3rem + .3vw);
+  border: 3px solid var(--deedPage-color8);
+  border-radius: 50px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+
+#the-form {
+  display: none;
+  border: 4px solid var(--deedPage-color2);
+  border-radius: 10%;
+  /* z-index: 9; */
+  
+}
+
+.form-container {
+  width: calc(275px + 5vw);
+  height: calc(350px + 5vh);
+  padding: 5%;
+  font-size: calc(.7rem + .7vw);
+  color: var(--deedPage-color5);
+  background-color: var(--deedPage-color7);
+  opacity: 0.9;
+  border-radius: 10%; 
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 80%;
+  padding: 15px;
+  margin: 5px;
+  border: none;
+  background: var(--deedPage-color8);
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+}
+
+.form-container .submit-button {
+  background-color: var(--deedPage-color6);
+  color: var(--deedPage-color5);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 50px;
+}
+
+.button-form-container .open-form-button:hover, .open-form-button:focus, .submit-button:hover, .submit-button:focus {
+  opacity: 1;
+}
+.form-container 
+.submit-button:hover, .submit-button:focus {
+  opacity: 1;
+}
+
+
+
+
 /* Footer Styling */
 #copy{
   text-align: center;
@@ -163,6 +258,10 @@ svg#wavyDavy {
   .deedCard .deedOption {
     font-size: calc(.6rem + .6vw);
   }
+  .form-container {
+    width: calc(350px + 7vw);
+    height: calc(350px + 10vh); 
+  }
 }
 @media (min-width: 767px){
   body {
@@ -178,6 +277,10 @@ svg#wavyDavy {
     width: calc(225px + 10vw);
     height: calc(225px + 10vh);
   }
+  .form-container {
+    width: calc(350px + 7vw);
+    height: calc(350px + 10vh); 
+  }
 }
 @media (min-width: 992px){
   #mainDeedContainer {
@@ -186,6 +289,11 @@ svg#wavyDavy {
   .deedCard {
     width: calc(250px + 15vw);
     height: calc(250px + 15vh);
+  }
+  .form-container {
+    width: calc(350px + 5vw);
+    height: calc(375px + 6vh);
+    font-size: calc(.6rem + .6vw); 
   }
 }
 @media (min-width: 1200px){

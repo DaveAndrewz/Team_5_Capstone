@@ -4,6 +4,7 @@ Lines 10-57 deedsArray
 58-59 deed1 & deed2 constants
 63 getRandomDeed function
 71 event listener
+80 Button-&-Form functions
 
 */
 
@@ -70,3 +71,13 @@ getRandomDeed = (array) => {
 // getRandomTask(deedsArray));
 window.addEventListener("load", () =>
 getRandomDeed(deedsArray));
+
+
+// deedCard Button-&-Form Code
+const formButton = document.querySelector(`.open-form-button`);
+const theForm = document.querySelector(`#the-form`)
+
+formButton.onclick = function openForm() {
+    theForm.style.display = "block";
+    formButton.style.display="none";
+}
