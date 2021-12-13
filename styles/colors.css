@@ -4,4 +4,8 @@
   --deedPage-color3: #777777;
   --deedPage-color4: #000000;
   --deedPage-color5: #ffffff;
+
+  --navbar-text-color: hsl(0, 0%, 85%);
+  --navbar-text-color-focus: white;
+  --navbar-bg-contrast: hsl(0, 0%, 25%);
 }

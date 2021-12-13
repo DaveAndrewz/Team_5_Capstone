@@ -163,7 +163,7 @@ svg#wavyDavy {
 #aboutTopSection {
   position: relative;
   top: 4.5em;
-  width: 98vw;
+  width: 80vw;
   padding: 2%;
   background-color: var(--deedPage-color1);
   border: 5px solid white;
@@ -175,7 +175,8 @@ svg#wavyDavy {
   overflow: hidden;
 }
 #missionTitle {
-  font-size: 40px;
+  font-size: 50px;
+  overflow: hidden;
   background-image: linear-gradient(0deg, var(--deedPage-color5), var(--deedPage-color2), var(--deedPage-color5));
   background-size: 100%;
   background-repeat: repeat;
@@ -183,12 +184,21 @@ svg#wavyDavy {
   -webkit-text-fill-color: transparent; 
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: var(--deedPage-color4);
 }
 
+#aboutHeading {
+  font-size: 50px;
+  overflow: hidden;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: var(--deedPage-color4);
+}
 #workOnThis {
   overflow: hidden;
   font-style: italic;
-  font-size: 40px;
+  font-size: 50px;
+  height: 60px;
   background-image: linear-gradient(0deg, var(--deedPage-color5), var(--deedPage-color2), var(--deedPage-color5));
   background-size: 100%;
   background-repeat: repeat;
@@ -196,6 +206,8 @@ svg#wavyDavy {
   -webkit-text-fill-color: transparent; 
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: var(--deedPage-color4);
 }
 
 #aboutHeading {
@@ -216,6 +228,10 @@ svg#wavyDavy {
   -webkit-text-fill-color: transparent; 
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: var(--deedPage-color4);
+  font-size: 50px;
+  overflow: hidden;
 }
 
 #aboutMiddleSection {
@@ -349,7 +365,7 @@ div#aboutBottomSection {
 
 #jjCardMiddle {
   text-align: center;
-  line-height: 1.7;
+  line-height: 2;
 }
 
 #jjCardBottom {
@@ -363,29 +379,38 @@ div#aboutBottomSection {
 
 #photoDave {
   position: relative;
-  width: 55%;
+  width: 50%;
   height: 90%;
   border: 5px solid white;
   border-radius: 25px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
   opacity: 1;
 }
+#photoDave:hover {
+  border: 5px solid var(--deedPage-color2);
+}
 
 #photoDC {
   position: relative;
-  width: 55%;
+  width: 50%;
   height: 90%;
   border: 5px solid white;
   border-radius: 25px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
 }
+#photoDC:hover {
+  border: 5px solid var(--deedPage-color2);
+}
 #photoJJ {
   position: relative;
-  width: 55%;
+  width: 50%;
   height: 90%;
   border: 5px solid white;
   border-radius: 25px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+}
+#photoJJ:hover {
+  border: 5px solid var(--deedPage-color2);
 }
 
 #mailButton {
