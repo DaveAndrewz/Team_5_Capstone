@@ -65,7 +65,7 @@ getRandomDeed = (array) => {
     const randomDeed1 = Math.floor(Math.random() * array.length);
     const randomDeed2 = Math.floor(Math.random() * array.length);
     deed1.innerText = array[randomDeed1];
-    deed2.innerText= array[randomDeed2];
+    deed2.innerHTML= `<p>${array[randomDeed2]}</p><b>If these two DailyDeed options are not for you, refresh the webpage for two more options.</b>`;
 }
 // button.addEventListener("click", () =>
 // getRandomTask(deedsArray));
@@ -79,5 +79,5 @@ const theForm = document.querySelector(`#the-form`)
 
 formButton.onclick = function openForm() {
     theForm.style.display = "block";
-    formButton.style.display="none";
+    formButton.style.display = "none";
 }
